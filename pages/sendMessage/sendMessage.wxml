@@ -1,0 +1,31 @@
+<view class="messagebox">
+  <view class="messageList">
+    <span><b>*</b>城市</span>
+    <input  bindinput ="cityInput" type="text" placeholder="请输入所在城市" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>商场</span>
+    <input  bindinput ="mallNameInput" type="text" placeholder="请输入商品名" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>面积(㎡)</span>
+    <input bindinput="mallAreaInput" type="number" placeholder="请输入商场面积" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>品类</span>
+    <input bindinput="mallCategoryInput" type="text" placeholder="请输入经营品类" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>预算(w)</span>
+    <input bindinput="budgetInput" type="number" placeholder="请输入预算" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>姓名</span>
+    <input  bindinput="partnerNameInput" type="text" placeholder="请输入您的姓名" />
+  </view>
+  <view class="messageList">
+    <span><b>*</b>手机号</span>
+    <input  bindinput="partnerMobileInput" type="number" maxlength="11" placeholder="请输入您的手机号" />
+  </view>
+  <view class="btnclick" bindtap="btnclick"> 提交合作</view>
+</view>

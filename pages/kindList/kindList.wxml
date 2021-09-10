@@ -1,0 +1,50 @@
+<view class='cont-pro'>
+  <!-- 左侧列表 -->
+  <view class='pro-left font28 color9'>
+    <scroll-view class='swipter-nav' scroll-y="true" style="height:100%;">
+      <view wx:for="{{categoryarr}}" wx:key="index" class='pro-title {{index==currentLeft?"bgWhite":""}}'
+       data-id='{{item.categoryId}}' bindtap='proItemTap' data-pos='{{index}}' data-index='{{index}}' >
+       <span></span>
+       {{item.name}}</view>
+    </scroll-view>
+  </view>
+  <!-- 右侧列表 -->
+  <view class="content">
+      <!-- id要用来实现点击左侧右侧滚动至相应位置的效果；class（pro-box）要用来计算右侧对应左侧某一分类的高度  -->
+      <!-- id: item0, item1, item2... （注意：不能直接使用数字或汉字做id）-->
+      <view class="imageconbox">
+   
+        <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="loadMore" bindscrolltoupper="refesh"></scroll-view>
+        <view class='pro-box {{selectindex!=0?"pro-text":""}}' wx:for="{{furnite}}" wx:key="index" wx:for-index="index" wx:for-item="item" id="{{index}}">
+          <!-- wx:if="{{selectId==index}}" -->
+          <view class='image-boxcon' bindtap="enterdetail" data-id="{{item.furniteId}}" >
+            <image  src="{{item.cover}}"  mode="widthFix" ></image>
+           <view class="boxcontext">
+            <view class='boxtext title' style="padding-top:10rpx;">
+              <span>人气:</span> 
+            <span style="color:#FF8259;">{{item.popular}} </span>
+             <span style="padding-left:10rpx">销量:</span> <span style="color:#FF8259;font-size:30rpx;">{{item.sales}}</span>
+            </view> 
+            <view class='boxtext' style="color:#1E283C;font-size:32rpx;margin-top:10rpx;font-weight:900">
+              {{item.name}}
+            </view> 
+          </view>
+          <!-- <view class='image-box'  wx:for="{{item.imgs}}" wx:key="index2" wx:for-index="index2" wx:for-item="item2" id="item2{{index}}">
+               <view class='pro-text'>
+          </view> -->
+      
+      </view>
+          <!-- <view class="item-title">{{item.title}}</view> -->
+          <!-- <view class='pro-item {{ item.id == perMonId ? "activeSelect" : "" }}' wx:for="{{item.image_list}}" wx:key="index"  bindtap='selectMon' data-id="{{item.id}}">
+            <view class='pro-text'>
+              <image src="{{item.url}}"></image>
+            </view> 
+          </view>-->
+        </view>
+    
+      </view>
+      <view class="none-list">
+        -我是有底线的-
+      </view>
+  </view>
+</view>

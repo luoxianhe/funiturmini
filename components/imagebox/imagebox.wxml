@@ -1,0 +1,21 @@
+<view class="wrap-box">
+    <scroll-view scroll-x="true" class="tab-h">
+        <view class="tab-item  {{categoty==item.categoty?'active':''}}" wx:key="item" wx:for="{{furnite}}"
+            data-current="{{item.indexflag}}" bindtap="swichNav">
+            {{item.categoty}}
+        </view>
+    </scroll-view>
+    <swiper class="tab-content" circular="true" current="{{currentTab}}" display-multiple-items="1.2" duration="300"
+        bindchange="switchTab" >
+        <swiper-item item-id="{{item.categoty}}" wx:for="{{furniteconlist}}" wx:key="index" data-current="index">
+            <view class="item-ans" catchtap="toRedirect">
+                <view class="avatar">
+                    <image class="img" src="{{item.cover}}"></image>
+                </view>
+                <view class="expertInfo">
+                    <view class="textOVerThree">{{item.description}} </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

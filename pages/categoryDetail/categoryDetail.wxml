@@ -1,0 +1,52 @@
+<view class="boxcon">
+  <view class="wrap-box " >
+    <view class="head-box">
+      <swiper indicator-dots="true" autoplay="true" interval="3500" duration="1000" circular="true"
+        indicator-color="rgba(255, 255, 255, 0.29)" indicator-active-color="#fff">
+        <block wx:for="{{banner}}" wx:key="item">
+          <swiper-item>
+            <view class="swiper-item">
+              <image mode="scaleToFill" src="{{item}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+ 
+    <!-- <view class="imagebox"> 
+      <image mode="scaleToFill" src="{{dataBox.cover}}"></image>
+    </view> -->
+    <view class="title titlebox">
+      <span>{{dataBox.hot==1?'火爆':''}}</span> {{dataBox.name}}
+     </view>
+  <view class="titlecon title">
+  
+    <view >
+      {{dataBox.recommend==1?'品牌精选':''}}
+     </view>
+    <view>
+      {{dataBox.description}}
+    </view>
+  </view>
+
+  <view class="detailbox titlecon">
+    <view class="titlebox"> 
+      细节展示：
+    </view>
+    <view class="boximg">
+      <view class="detailimage" wx:for="{{qualityImgs}}" wx:if="index"> 
+        <image  bindtap='clickImg' data-img="{{item}}" 
+        src="{{item}}"  mode="widthFix" ></image>
+    </view>
+    </view>
+  </view>
+  </view>
+  <view>
+  <!--打开会话聊天功能，只能用按钮的开放来触发-->
+
+    <button class="shareBox" open-type="contact"> <image class="kefu" open-type="contact" src="../../static/image/kefu.png"></image>
+    <span class="kefuname">联系客服</span>
+    </button>
+ 
+  </view>
+</view>

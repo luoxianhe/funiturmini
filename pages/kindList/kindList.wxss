@@ -1,0 +1,149 @@
+.bgWhite {
+  background: #fff;
+  display: flex;
+  align-items: center;
+
+}
+.pro-title span{
+  display: inline-block;
+  width: 4rpx;
+  height: 32rpx;
+  margin-right: 6rpx;
+  background: none;
+}
+.bgWhite span{
+  background: #1296db;
+}
+.cont-pro {
+  height: 100%;
+  /* padding:0 40rpx; */
+  background-color: #fff;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.pro-left {
+ position: fixed;
+ left: 0;
+ height: 100%;
+ top:0;
+  background-color: #F4F6F8;
+  overflow-y: scroll;
+}
+.pro-title {
+  padding:0 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.pro-right {
+  flex: 1;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+.imagebox{
+ height: auto;
+ overflow: hidden;
+
+}
+.content .pro-box{
+  font-size: 14rpx;
+}
+.content .pro-text{
+  width:50% ;
+  float: left;
+  box-sizing: border-box;
+  padding:0rpx 5rpx ;
+}
+.content .pro-text .title{
+font-size: 24rpx;
+}
+.content .pro-text:nth-child(2n){
+  padding-left: 0;
+}
+.content .pro-text:nth-child(2n+1){
+  padding-right: 0;
+}
+.content .pro-text image{
+  width: 100%;
+}
+.content {
+  margin-left: 150rpx;
+  width: 600rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.content .imageconbox{
+  height: auto;
+  overflow: hidden;
+  padding-left: 10rpx;
+}
+.image-box{
+  width: 50%;
+  float: left;
+  padding: 0 5rpx;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.image-boxcon{
+  height: auto;
+  overflow: hidden;
+}
+.pro-text  image{
+  height: 208rpx!important;
+}
+.boxcontext{
+  padding-bottom: 30rpx;
+  padding-left: 10rpx;
+}
+.boxtext{
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.image-box image{
+  width: 100%;
+}
+.item-title {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  font-size: 20rpx;
+  background-color: #F2F2F2;
+}
+
+.item-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.pro-item {
+  width: 100%;
+  display: flex;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #F2F2F2;
+}
+.activeSelect {
+  background-color: #E8380D;
+  color: #fff;
+}
+.pro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.none-list {
+  text-align: center;
+  padding: 20rpx 0 10rpx;
+  color: #ccc;
+  font-size: 28rpx;
+}

@@ -1,0 +1,73 @@
+<view class="wrap" catchtouchmove="{{touchmove==true?true:''}}">
+  <view class="wrap-top">
+    <!-- 搜索框 -->
+    <!-- <view class="wrap-box head-box">
+      <view class="head-image">
+        <open-data class="head-image" type="userAvatarUrl"></open-data>
+      </view>
+      <view class="search-box" >
+        <i class="iconfont iconsousuo"></i>
+        <input />
+      </view>
+    </view> -->
+    <!-- banner  interval 自动切换时间间隔  duration 滑动动画时长 -->
+    <view class="wrap-box swiper boxbottomtitle backfff">
+      <swiper indicator-dots="true" autoplay="true" interval="3500" duration="1000" circular="true"
+        indicator-color="rgba(255, 255, 255, 0.29)" indicator-active-color="#fff">
+        <block wx:for="{{banner}}" wx:key="item">
+          <swiper-item>
+            <view class="swiper-item">
+              <image bindtap="bindtapclick" data-url="{{item.linkUrl}}" mode="widthFix" src="{{item.cover}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- tab-list -->
+    <view class="tab-box wrap-box boxbottomtitle backfff">
+      <view class="titlebox">
+        <b></b>品牌优选
+      </view>
+      <view class="tab-nav">
+       
+        <view class="tab-item" wx:for="{{menu}}" wx:key="item" bindtap="bindtapclick" data-url="{{item.linkUrl}}">
+          <view>
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="textboxcon">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+    <!--大图轮播-->
+    <!-- <image-box furniteData="{{furnite}}"></image-box> -->
+    <view class="backfff boxbottomtitle">
+    <view class="titlebox">
+      <b></b>最新加入
+    </view>
+    <view class="imageconbanner  ">
+      <swiper class="tab-content" circular="true" current="{{currentTab}}" display-multiple-items="1.2" duration="300"
+        bindchange="switchTab">
+        <swiper-item wx:for="{{furnite}}" wx:key="index" data-id="{{item.furniteId}}"  data-current="index" bindtap="binddetail" data-url="{{item.linkUrl}}">
+          <view class="item-ans" >
+            <view class="avatar">
+              <image class="img" src="{{item.cover}}"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="textOVerThree">{{item.summary}} </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+    <view class="backfff boxbottomtitle"> 
+    <view class="titlebox">
+      <b></b>我想加盟
+    </view>
+    <view class="homeadv ">
+      <image src="{{homeAdv.img}}" bindtap="bindtapad" data-url="{{homeAdv.linkUrl}}" mode="widthFix"></image>
+    </view>
+  </view>
+  </view>
+  
+</view>

@@ -1,0 +1,42 @@
+/* pages/sendMessage/sendMessage.wxss */
+page{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.messageList{
+  padding:0rpx 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+}
+.messageList b{
+  color: red;
+  padding-right: 10rpx;
+}
+.messageList{
+  width: 100%;
+height: 104rpx;
+line-height: 104rpx;
+}
+.messagebox span{
+  width: 145rpx;
+  font-weight:600;
+}
+.messagebox input{
+text-align: right;
+float: right;
+width: calc(100% - 120rpx);
+display: inline-block;
+height: 104rpx;
+line-height: 104rpx;
+}
+.btnclick{
+  background: #1296db;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 80rpx;
+  border-radius: 8rpx;
+}

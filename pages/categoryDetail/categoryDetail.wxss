@@ -1,0 +1,96 @@
+/* pages/categoryDetail/categoryDetail.wxss */
+/* banner */
+page{
+  height: 100%;
+}
+.boxcon{
+ /* // background:#F4F6F8; */
+ background:#F4F6F8;
+  min-height: 100%;
+}
+.wrap-box{
+  margin: 0 20rpx;
+  background: #fff;
+}
+.head-box swiper{
+  width: 100%;
+  height: 330rpx;
+  margin-top: 30rpx;
+}
+.head-box .swiper-item{
+  width: 100%;
+  height:100%;  
+}
+.head-box .swiper-item image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;   
+}
+.titlecon {
+  padding: 20rpx 20rpx 0;
+  font-size: 30rpx;
+}
+ .title{
+  padding:10rpx 20rpx;
+  border-bottom:20rpx solid #F4F6F8 ;
+}
+.titletext{
+  font-size: 32rpx;
+  font-weight: bold;
+  padding:10rpx 20rpx;
+
+ }
+.imagebox image{
+ width: 100%;
+}
+.boximg{
+  padding-top: 20rpx;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.detailimage {
+   flex: 5;
+  float: left;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.detailimage:nth-child(3n+2){
+  margin-left: 0;
+}
+.detailimage image{
+  width: 100%;
+}
+.shareBox{
+  position: relative;
+  width: 100rpx!important;
+  height: 100rpx;
+}
+.shareBox {
+  position: fixed;
+  right: 10rpx;
+  bottom: 380rpx;
+  width: auto!important;
+  height: auto!important;
+  background: #fff;
+  border-radius: 50%;
+  right: 10rpx;
+  bottom: 380rpx;
+ padding:15rpx 20rpx;
+  background: #fff;
+  /* border-radius: 50%; */
+  text-align: center;
+}
+.kefuname{
+  display: block;
+  font-weight:normal;
+  color: red;
+  font-size: 20rpx;
+}
+.kefu{
+  width: 60rpx;
+  height: 60rpx;
+  margin:0 auto;
+  text-align:center;
+}

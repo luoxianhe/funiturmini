@@ -1,0 +1,205 @@
+@import "/static/css/icon.wxss";
+
+.wrap {
+ 
+}
+
+page {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+}
+.backfff{
+  background: #fff;
+  padding: 0 20rpx;
+}
+/* 头像 */
+.head-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.wrap-box swiper {
+  width: 100%;
+}
+
+.wrap-box image {
+  width: 100%;
+}
+
+.head-image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+swiper {
+  height: 190px;
+}
+.head-image image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* search */
+.search-box {
+  font-size: 28rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 80%; */
+  width: 580rpx;
+  background: #F3F3F3;
+  height: 80rpx;
+  border-radius: 40rpx;
+  /* padding: 0 20rpx; */
+  box-sizing: border-box;
+}
+
+.iconfont {
+  color: #CECECE;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.search-box text {
+  color: #CECECE;
+}
+
+/* banner */
+.head-box swiper {
+  width: 100%;
+  height: 330rpx;
+  margin-top: 30rpx;
+}
+
+.head-box .swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.head-box .swiper-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+/* 列表 */
+.imageconbanner .tab-content {
+  height: 500rpx;
+}
+
+.textOVerThree {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: 900;
+}
+
+.tab-nav {
+  /* display: flex; */
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+margin-bottom:10rpx
+}
+.imageconbanner swiper-item {
+
+}
+.textboxcon{
+  overflow: hidden;
+white-space: nowrap;
+font-size: 24rpx;
+text-overflow: ellipsis;
+}
+.titlebox {
+  padding: 10rpx 0 15rpx;
+  font-size: 32rpx;
+  line-height: 55rpx;
+  font-family: '微软雅黑';
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.titlebox b{
+  display: inline-block;
+  width: 4rpx;
+  height: 32rpx;
+  margin-right: 6rpx;
+  background: #1296db;
+}
+.tab-item {
+  text-align: center;
+  width: 20%;
+  float: left;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.tab-item image {
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.swiper-box .swiperbox {
+  margin: 0 20rpx;
+}
+
+.swiper-box swiper image {
+  width: 100%;
+}
+.boxbottomtitle{
+  /* border-bottom:20rpx solid #F4F6F8 ; */
+  border-bottom:20rpx solid #F4F6F8 ;
+}
+.homeadv image {
+  width: 100%;
+}
+
+.avatar {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+
+.expertInfo {
+  font-size: 30rpx;
+  flex-grow: 2;
+  padding-top: 20rpx;
+}
+
+.imageconbanner .item-ans {
+ margin-right: 20rpx;
+ padding: 10rpx;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 2px 2px 10rpx rgb(236, 231, 231)
+}

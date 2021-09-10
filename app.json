@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sendMessage/sendMessage",
+    "pages/categoryDetail/categoryDetail",
+    "pages/kindList/kindList",
+    "pages/ShoppingMall/ShoppingMall",
+    "pages/bindLink/bindLink"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "家居品牌优选荟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/homeBar.png"
+      },{
+        "pagePath": "pages/kindList/kindList",
+        "text": "分 类",
+        "iconPath": "static/image/kind.png",
+        "selectedIconPath": "static/image/kindBar.png"
+      }
+     
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
